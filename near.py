@@ -1,13 +1,14 @@
-def CompareWords(word1,word2):
-    count={word1[i]:0 for i in range(len(word1))}
-    for i in range(len(word1)): count[word1[i]]+=1
 
-    for i in range(len(word2)):
-        if(count.get(word2[i])== None or count[word2[i]]== 0): return False
-        count[word2[i]] -= 1
-    return True
+
+def compare_words(word1,word2):
+    m=0
+    for i in word2:
+        if i in word1: m+=1
+    if m==len(word2): return True
+    else: return False
+           
 
 w1=input("Enter first word:")
 w2=input("Enter second word:")
 
-print (CompareWords(w1,w2))
+print (compare_words(w1,w2))
