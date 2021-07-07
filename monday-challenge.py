@@ -1,5 +1,0 @@
-string=input("Enter words here:")
-words=string.split()
-words.sort()
-words= list(dict.fromkeys(words))
-print (*words)
