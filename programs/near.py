@@ -7,8 +7,8 @@ def compare_words(word1,word2):
     if m==len(word2): return True
     else: return False
            
+if __name__ == "__main__":
+    w1=input("Enter first word:")
+    w2=input("Enter second word:")
 
-w1=input("Enter first word:")
-w2=input("Enter second word:")
-
-print (compare_words(w1,w2))
+    print (compare_words(w1,w2))

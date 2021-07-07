@@ -4,6 +4,6 @@ def alphasort(sentence):
     words.sort()
     words= set(words) #or unique_words=set(words)
     return words  
-
-##string=input("Enter words here:")
-##print (alphasort(string))
+if __name__ == "__main__":
+    string=input("Enter words here:")
+    print (alphasort(string))

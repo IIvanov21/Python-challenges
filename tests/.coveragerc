@@ -1,0 +1,11 @@
+#Things that get tested
+[run]
+#Things you want to test 
+include=programs/* 
+#Things you want to ignore
+omit=venv/* 
+
+#Ignore given lines
+[report]
+exclude_lines=
+    if __name__ == "__main__":
